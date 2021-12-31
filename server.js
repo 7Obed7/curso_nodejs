@@ -13,6 +13,11 @@ class Server {
 
     middlewares(){
         this.app.use(cors());
+        //lectura del body
+        this.app.use(express.json());
+        //lectura del 
+        this.app.use(express.static("public"));
+
     }
 
     routes(){
